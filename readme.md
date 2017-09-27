@@ -41,11 +41,13 @@ for indexing.
 Users need to have an Ethereum key pair (one or multiple) assigned to their
 indorse.io profile. This can be done by using a simple smart contract:
 
-`//singles address
+```javascript
+//singles address
 mapping (uint => address) public userIdToAddress;
 
 //multiple addrsses
-mapping(uint => address[]) public userIdToAddresses;`
+mapping(uint => address[]) public userIdToAddresses;
+```
 
 The register addresses will be used to validate proof of ownership of repos.
 The reason to have multiple keys is to generate disposable keys that could be
@@ -57,12 +59,14 @@ private key pair associated with one of theaddresses registered in the smart con
 
 These proofs can be published on ipfs:
 
-`{
+```json
+{
     type : "github",
     indorseIoUsername : "exampleUser",
     repoName : "user/repo",
     signature : "af6a86f9a69f90af79a879f6a9f89070a665af"
-}`
+}
+```
 
 The id of the ipfs file must be sent an indorse.io server, which is indexing id
 of the proofs published on ipfs.
@@ -70,7 +74,8 @@ of the proofs published on ipfs.
 These proofs can be later signed by indorse.io (using the automatic verification)
 and improved, so that their authenticity is higher, and published on ipfs:
 
-`{
+```json
+{
     type : "github",
     indorseIoUsername : "exampleUser",
     repoName : "user/repo",
@@ -81,7 +86,8 @@ and improved, so that their authenticity is higher, and published on ipfs:
         signature : "144324353cdf1c149810908d980aaaaaaa"
       }
     ]
-}`
+}
+```
 
 More validations can be added by the other indorse.io by attaching their signatures.
 
