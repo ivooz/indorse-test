@@ -21,16 +21,19 @@ describe('emailService', () => {
         return emailService.sendRegistrationEmail(undefined,mockEmail.githubUsername,mockEmail.randomChallenge);
       })
     });
+    
     it('it should throw an exception when the githubUsername is undefined ', async () => {
       testUtils.expectException(() => {
         return emailService.sendRegistrationEmail(mockEmail.email,undefined,mockEmail.randomChallenge);
       })
     });
+
     it('it should throw an exception when the randomChallenge is undefined ', async () => {
       testUtils.expectException(() => {
         return emailService.sendRegistrationEmail(mockEmail.email,mockEmail.githubUsername,undefined);
       })
     });
+
     it('it should send an email ', async () => {
       try {
         let result = await emailService.sendRegistrationEmail(mockEmail.email,mockEmail.githubUsername,mockEmail.randomChallenge);

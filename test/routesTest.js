@@ -33,7 +33,6 @@ describe('routes', () => {
 
   describe('/register/start', () => {
     it('Returns a 200 response when the data is correct', async () => {
-
       await chai.request(app)
       .post('/register/start')
       .send({

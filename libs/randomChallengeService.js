@@ -7,11 +7,12 @@ module.exports = (() => {
 
   return {
 
+
     /**
-    * generateRandomString - TODO
-    *
-    * @return {type}  description
-    */
+     * generateRandomString - generates a secure random string
+     *
+     * @return {type}  description
+     */
     generateRandomString : async function generateRandomString() {
       try {
         let buffer = await randomBytesAsync(BUFFER_SIZE)

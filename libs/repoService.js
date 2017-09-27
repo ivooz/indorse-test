@@ -10,12 +10,13 @@ module.exports = function init(githubApi) {
 
   return {
 
+
     /**
-     * getRepo - description
+     * getRepo - retrieves the repository information from the github api
      *
-     * @param  {type} owner description
-     * @param  {type} repoName  description
-     * @return {type}       description
+     * @param  {type} owner    description
+     * @param  {type} repoName description
+     * @return {type}          description
      */
     getRepo : async function getRepo(owner, repoName) {
       if(!owner) {

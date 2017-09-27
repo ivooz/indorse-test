@@ -11,10 +11,10 @@ module.exports = (() => {
   return {
 
     /**
-     * beginRegistration - description
+     * beginRegistration - initiates the github repo registration process
      *
      * @param  {type} email    description
-     * @param  {type} repoName description
+     * @param  {type} repoPath description
      * @return {type}          description
      */
     beginRegistration : async function beginRegistration(email, repoPath) {
