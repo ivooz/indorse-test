@@ -7,6 +7,14 @@ module.exports = (() => {
 
   return {
 
+
+    /**
+     * finalizeRegistration - finalizes the github repo registration process
+     *
+     * @param  {type} email  description
+     * @param  {type} gistId description
+     * @return {type}        description
+     */
     finalizeRegistration : async function finalizeRegistration(email, gistId) {
       if(!email) {
         throw new Error("Invalid Argument: email is undefined");

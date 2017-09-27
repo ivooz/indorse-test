@@ -5,14 +5,15 @@ module.exports = (() => {
 
   return {
 
+
     /**
-    * sendRegistrationEmail - description
-    *
-    * @param  {type} email           description
-    * @param  {type} githubUsername  description
-    * @param  {type} randomChallenge description
-    * @return {type}                 description
-    */
+     * sendRegistrationEmail
+     *
+     * @param  {type} email           description
+     * @param  {type} githubUsername  description
+     * @param  {type} randomChallenge description
+     * @return {type}                 description
+     */
     sendRegistrationEmail : function sendRegistrationEmail(email, githubUsername, randomChallenge) {
       if(!email) {
         throw new Error("Invalid Argument: email is undefined")

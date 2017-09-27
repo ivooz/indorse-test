@@ -67,11 +67,13 @@ describe('dbService', () => {
         return dbService.getUserRepo();
       })
     });
+    
     it('it should throw an exception when the user repo does not exist ', async () => {
       testUtils.expectException(() => {
         return dbService.getUserRepo("test");
       })
     });
+
     it('it retrieve the user repo if it exists', async () => {
       try {
         await dbService.insertUserRepo(mockUser2.email,mockUser2.randomChallenge,mockUser2.repo,mockUser2.githubUsername);

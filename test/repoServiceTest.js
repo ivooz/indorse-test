@@ -18,6 +18,7 @@ async function expectGetRepoException(owner,repoId) {
 describe('repoService', () => {
 
   describe('#init(githubApi)', () => {
+    
     it('it should throw an exception when the githubApi is undefined ', () => {
       try {
         require('../libs/repoService')();

@@ -8,8 +8,10 @@ module.exports = (() => {
 
   return {
 
+
     /**
-     * insertUserRepo - description
+     * insertUserRepo - saves the user repository registration request in the
+     * database
      *
      * @param  {type} userEmail       description
      * @param  {type} randomChallenge description
@@ -52,8 +54,9 @@ module.exports = (() => {
       })
     },
 
+
     /**
-     * getUserRepo - description
+     * getUserRepo - retrieves the registration request from the database
      *
      * @param  {type} userEmail description
      * @return {type}           description

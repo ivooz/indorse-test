@@ -10,8 +10,9 @@ module.exports = function init(githubApi) {
 
   return {
 
+
     /**
-     * getGist - TODO
+     * getGist - retrieves the gist from github
      *
      * @param  {type} gistId description
      * @return {type}        description
